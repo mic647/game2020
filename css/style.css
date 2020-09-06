@@ -1,0 +1,119 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.game {
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(50% - 175px);
+    text-align: center;
+    padding: 20px;
+    border-left: 5px solid #931212;
+    border-right: 5px solid #931212;
+}
+
+.board {
+    margin-top: 20px;
+    width: 350px;
+    height: 350px;
+    border-spacing: 0px;
+}
+
+.board td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    width: 35px;
+}
+
+.board td:hover {
+    background-color: gray;
+}
+
+.start-game {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.click {
+    background-color: #931212;
+    color: white;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dark-mode {
+    display: block;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-level {
+    text-align: center;
+}
+
+.btn-level>button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: lightgreen;
+    border-radius: 20px;
+}
+
+.btn-level>button:hover {
+    background-color: #931212;
+    color: white;
+}
+
+.start-game {
+    width: 100px;
+    height: 40px;
+    background-color: lightblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.start-game:hover {
+    color: white;
+    background-color: #931212;
+}
+
+.time{
+    display: inline;
+    padding: 20px;
+}
+.next-num{
+    display: inline;
+    padding: 20px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.modal {
+    background-image: url(../img/confetti.gif);
+    color: linen;
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    bottom: calc(50% - 100px);
+    left: calc(50% - 250px);
+    line-height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    transition: 2s;
+    display: block;
+    opacity: 100%;
+}
