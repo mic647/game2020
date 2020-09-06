@@ -14,20 +14,22 @@
             <label class="input-dark">dark mode:</label>
             <input class="dark-mode" onclick="darkMode()" type="range" min="0" max="1">
             <div class="modal"> GAME OVER </div>
+            <button class="start-game" onclick="startGame()"> Play from step 1 </button>
+            <h5>OR</h5>
             <div class="btn-level">
                 <button onclick="sizeGame(this)" class="size-game"> 16 </button>
                 <button onclick="sizeGame(this)" class="size-game"> 25 </button>
                 <button onclick="sizeGame(this)" class="size-game"> 36 </button>
             </div>
-            <button class="start-game" onclick="startGame()"> startGame </button>
-            <h3 class="time">Time: <span>00:00</span></h1>
-            <h3 class="next-num">Next Num: <span>0</span></h1>
+            <h3 class="btn-st time">Time: <span>00:00</span></h3>
+            <h3 class="btn-st next-num">Next Num: <span>0</span></h1>
+            <h3 class="btn-st score">score: <span>0</span></h3>
         </div>
         <table class="board">
         </table>
-        <div class="victories">
+        <!-- <div class="victories">
             <h4>Previous victories: <span><br>--:--</span></h4>
-        </div>
+        </div> -->
     </div>
     <script src="js/main.js"></script>
 </body>

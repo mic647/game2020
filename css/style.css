@@ -10,8 +10,6 @@ body {
     left: calc(50% - 175px);
     text-align: center;
     padding: 20px;
-    border-left: 5px solid #931212;
-    border-right: 5px solid #931212;
 }
 
 .board {
@@ -33,11 +31,10 @@ body {
     background-color: gray;
 }
 
-.start-game {
+/* .start-game {
     display: block;
     margin-top: 20px;
-    margin-bottom: 20px;
-}
+} */
 
 .click {
     background-color: #931212;
@@ -59,6 +56,7 @@ button {
 
 .btn-level {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .btn-level>button {
@@ -76,7 +74,7 @@ button {
 }
 
 .start-game {
-    width: 100px;
+    width: 200px;
     height: 40px;
     background-color: lightblue;
     cursor: pointer;
@@ -89,17 +87,31 @@ button {
     background-color: #931212;
 }
 
-.time{
+.btn-st{
     display: inline;
-    padding: 20px;
+    padding: 10px;
+    background-color: lightcoral;
+    color: black;
+    border: 1px solid black
+}
+
+.score{
+    display: block;
+    width: 330px;
+}
+.time{
+    margin-right: 20px;
 }
 .next-num{
-    display: inline;
-    padding: 20px;
+    margin-left: 20px;
 }
 
 h4 {
     text-align: center;
+}
+
+h5{
+    line-height: -10px;
 }
 
 .modal {
@@ -107,9 +119,9 @@ h4 {
     color: linen;
     position: absolute;
     height: 200px;
-    width: 500px;
+    width: 300px;
     bottom: calc(50% - 100px);
-    left: calc(50% - 250px);
+    left: calc(50% - 150px);
     line-height: 200px;
     text-align: center;
     border-radius: 20px;
