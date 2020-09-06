@@ -120,9 +120,9 @@ h5{
     color: linen;
     position: absolute;
     height: 200px;
-    width: 300px;
+    width: 500px;
     bottom: calc(50% - 100px);
-    left: calc(50% - 150px);
+    left: calc(50% - 250px);
     line-height: 200px;
     text-align: center;
     border-radius: 20px;

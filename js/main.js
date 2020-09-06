@@ -39,7 +39,7 @@ function nextLevelInGame() {
     for (var i = 1; i < gNumsOfGame + 1; i++) {
         gNums.push(i)
     }
-    isOn = true
+    addScore(10);
     gCountCellClicked = 0;
     modal('0', 'none');
     renderBoard();
@@ -49,11 +49,17 @@ function nextLevelInGame() {
 
 
 function sizeGame(elBtn) {
+    isOn = true;
     document.querySelector('h3 span').innerHTML = '00:00';
     clearInterval(gInterval);
     var num = parseInt(elBtn.innerText)
     gNumsOfGame = num;
     nextLevelInGame();
+    gScore = 0;
+    addScore(0);
+    if (num === 16) gLevel = 1;
+    if (num === 25) gLevel = 1;
+    if (num === 36) gLevel = 3;
 }
 
 function renderBoard() {
@@ -91,7 +97,6 @@ function cellClicked(clickedNum) {
 
 function nextLevel() {
     if (gCountCellClicked == gNumsOfGame) {
-        addScore(10)
         if (gLevel === 1) {
             gNumsOfGame = 25;
             gLevel++;
@@ -110,10 +115,12 @@ function nextLevel() {
 function addScore(score) {
     var elScore = document.querySelector('.score span');
     elScore.innerText = gScore + score;
+    gScore = gScore + score;
 }
 
 function isGameOver() {
     if (gCountCellClicked == 36 && isOn) {
+        addScore(10);
         isOn = false;
         // document.querySelector('h4 span').innerHTML += `<br>` + '00:' + startTimeCounter();
         clearInterval(gInterval);
@@ -152,7 +159,7 @@ function modal(opacity, display) {
     var elModal = document.querySelector('.modal');
     elModal.style.opacity = opacity + '%';
     elModal.style.display = display;
-    elModal.innerText += `your scor is ${gScore}! You have completed ${gScore/10} steps`
+    elModal.innerText = `Game over!!!your scor is  ${gScore}! You have completed  ${gScore/10} steps`
 }
 
 function getRandomInt(min, max) {
