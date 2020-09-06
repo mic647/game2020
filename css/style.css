@@ -31,10 +31,10 @@ body {
     background-color: gray;
 }
 
-/* .start-game {
+.start-game {
     display: block;
-    margin-top: 20px;
-} */
+    margin-bottom: -15px;
+}
 
 .click {
     background-color: #931212;
@@ -111,8 +111,9 @@ h4 {
 }
 
 h5{
-    line-height: -10px;
+    margin-bottom: -5px;
 }
+
 
 .modal {
     background-image: url(../img/confetti.gif);
